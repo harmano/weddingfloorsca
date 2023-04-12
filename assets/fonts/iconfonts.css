@@ -159,3 +159,6 @@ font-family: 'icomoon' !important; speak: never; font-style: normal; font-weight
 .icon-bxl-sketch:before { content: "\e999"; }
 .icon-bxl-squarespace:before { content: "\e99a"; }
 .icon-bxl-final-cut:before { content: "\e99b"; }
+.dtr-btn i{
+        padding-top: -100px !important;
+}
