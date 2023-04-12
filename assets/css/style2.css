@@ -1,0 +1,615 @@
+/*----------------------------------------*/
+/*----- 1 Generate Google Fonts  -----*/
+/*----------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&family=Playfair+Display:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/*----------------------------------------*/
+/*----- 2 General Styles -----*/
+/*----------------------------------------*/
+body { -webkit-font-smoothing: antialiased; -webkit-animation: fix 1s 1; overflow-x: hidden; font-family: 'Roboto', sans-serif !important; }
+h1, h2, h3, h4, h5, h6 { margin-bottom: 15px; 
+  font-family: 'Roboto', sans-serif !important; }
+a, a:hover { text-decoration: none;  font-family: 'Roboto', sans-serif !important; }
+a:focus { outline: none; }
+img { max-width: 100%; }
+p { margin: 0 0 10px 0; font-family: 'Roboto', sans-serif !important; }
+p:last-child { margin: 0; font-family: 'Roboto', sans-serif !important; }
+
+.gg-arrows-v {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    top: -15px;
+    right: -300px;
+    transform: scale(var(--ggs,1));
+    width: 10px;
+    height: 20px;
+    background:
+     linear-gradient(
+         to left,
+         currentColor 15px,transparent 0)
+         no-repeat 4px 2px/2px 6px,
+     linear-gradient(
+         to left,
+         currentColor 15px,transparent 0)
+         no-repeat 4px 12px/2px 6px
+ }
+ .gg-arrows-v::after,
+ .gg-arrows-v::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    transform: rotate(-45deg);
+    left: 2px
+ }
+ .gg-arrows-v::after {
+    border-bottom: 2px solid;
+    border-left: 2px solid;
+    bottom: 1px
+ }
+ .gg-arrows-v::before {
+    border-top: 2px solid;
+    border-right: 2px solid;
+    top: 1px
+ }
+
+@media screen and (min-width: 769px) {
+    .container-cst{
+        padding-left: 5% !important;
+        padding-right: 5% !important;
+    }
+    .dd-button {
+
+        width: 500px !important;
+
+      }
+      .dropdown {
+
+        width: 100px !important;
+       
+      }
+      .container-cst{
+        padding-left: 15% !important;
+        padding-right: 15% !important;
+        padding-bottom: 15% !important;
+      }
+    .dd-button:after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: 0px;
+        left: 150px !important;
+        transform: translateY(-50%);
+        width:0; 
+        height: 0; 
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 5px solid #ffffff;
+    }
+    .img-sticky{
+        height: calc(100vh - 100px);
+        height: -moz-calc(100vh - 100px);
+        height: -webkit-calc(100vh - 100px);
+        height: -o-calc(100vh - 100px);
+        width: 50vw;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 100px;
+        align-self: flex-start;
+        margin-top: 100px;
+    }
+    .priceboxoutter{
+        padding-left: 80px !important;
+        padding-right: 80px !important;
+    }
+    .containter-design{
+        padding-bottom: 50px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .outer{
+        padding: 10px;
+    }
+    .containter-design{
+        padding-top: 130px;
+    }
+    .backicon{
+      width: 35px !important;
+      margin-top: 34px !important;
+      margin-left: 108px !important;
+ 
+    }
+  }
+  
+
+.p-id{
+   margin-left: 100px !important;
+}
+.mt-100{
+    margin-top: 100px !important;
+}
+.container-cst{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.header-h1{
+    font-size: 10vh;
+    margin-left: 0;
+    padding-left: 10px;
+
+}
+
+
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    border: 10px  #21C4FC !important;
+  }
+
+  .dd-button {
+    display: inline-block;
+    border-radius: 14px;
+    padding: 10px 30px 10px 20px;
+    background-color: #21C4FC;
+    color:white;
+    cursor: pointer;
+    white-space: nowrap;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    border: 0px solid black !important;
+    -webkit-box-shadow: 0px 15px 17px -2px rgba(126, 184, 255, 0.14); 
+    box-shadow: 0px 15px 17px -2px rgba(123, 205, 255, 0.14);
+    transition: 0.3s;
+    z-index: -1 !important;
+
+  }
+  
+    /* Dropdown */
+
+  .dd-button:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    width:0; 
+    height: 0; 
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #ffffff; z-index: -1 !important;
+  }
+  
+  .dd-button:hover {
+    background-color: #eeeeee;
+    
+  }
+  
+  
+  .dd-input {
+    display: none;
+  }
+  
+  .dd-menu {
+    position: absolute;
+    top: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 0;
+    margin: 2px 0 0 0;
+    box-shadow: 0 0 6px 0 rgba(0,0,0,0.1);
+    background-color: #ffffff;
+    list-style-type: none;
+  }
+  
+  .dd-input + .dd-menu {
+    display: none;
+  } 
+  
+  .dd-input:checked + .dd-menu {
+    display: block;
+  } 
+  
+  .dd-menu li {
+    padding: 10px 20px;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  
+  .dd-menu li:hover {
+    background-color: #f6f6f6;
+  }
+  
+  .dd-menu li a {
+    display: block;
+    margin: -10px -20px;
+    padding: 10px 20px;
+  }
+  
+  .dd-menu li.divider{
+    padding: 0;
+    border-bottom: 1px solid #cccccc;
+  }
+
+  .text p{
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    color: #222222;
+    font-weight: 700;
+    font-size: 14px;
+  }
+  .text p:nth-last-child(1){
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    color: #222222;
+    font-weight: 400;
+    font-size: 12px;
+  }
+  .text p:nth-last-child(2){
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    color: #222222;
+    font-weight: 400;
+    font-size: 13px;
+ 
+  }
+  .text p:nth-last-child(1){
+   margin-top: -3px;
+ 
+  }
+
+  .imgs-cont{
+    margin-top: 70px;
+  }
+  .design{
+    margin-bottom: 5px;
+    border: 1px solid rgba(88, 88, 88, 0.285);
+    border-radius: 5px;
+
+    width: 100%;
+    height: auto;
+  }
+  .design img{
+    border-radius: 0px;
+    padding: 10px;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    
+  }
+  .img-box{
+    margin-top: 25px;
+  }
+
+  .pricing-p a{
+    color: #000000;
+    transition: color 1s ;
+    transition: 0.3s;
+    
+  }
+  .pricing-p a:hover{
+    color: #000000;
+    font-weight: 500;
+    text-decoration: underline;
+  }
+
+  .view-pricing{
+    transition: 0.3s;
+  }
+  .view-pricing:hover{
+    opacity: .5;
+  }
+
+.title-img{
+    font-size: 18px;
+    text-align: center;
+    font-weight: 800;
+    text-decoration: underline;
+    margin-bottom: 40px;
+}
+.h2-text{
+    font-size: 15px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+.p-text{
+    font-size: 14px;
+    font-weight: 400;
+}
+.p-text-2{
+  font-size: 10px;
+  font-weight: 400;
+  margin-top: -2px;
+  text-align: right !important;
+  margin-right: 15% !important;
+  color: grey;
+}
+
+.pricebox{
+    background-color: #ffffff;
+    width: 100%;
+    border-radius: 10px;
+    padding: 30px;
+    padding-bottom: 30px;
+    margin-top: 50px;
+    -webkit-box-shadow: 0px 26px 19px 4px rgba(148,148,148,0.21); 
+box-shadow: 0px 26px 19px 4px rgba(148,148,148,0.21);
+   
+}
+.priceboxoutter{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.containter-design{
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+}
+.contact-btn{
+    width: 100%;
+    background-color: #21C4FC;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 50px;
+    transition: .3s;
+}
+.contact-btn a{
+    color: white;
+}
+
+.contact-btn:hover{
+    width: 100%;
+    background-color: rgb(36, 36, 36);
+    color: white;
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 50px;
+}
+
+.backicon{
+    width: 24px;
+    margin-top: 29px;
+    margin-left: 28px;
+    transition: all .3s;
+    transform: rotate(180deg);
+  }
+.backicon:hover{
+    opacity: .5;
+
+}
+.btn{
+    width: 200px !important;
+}
+.btn-filter{
+    background-color: #21C4FC;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 25px;
+}
+.btn-primary{
+    background-color: #21C4FC !important;
+    border: 0px;
+    border-radius: 5px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.dropdown:hover>.dropdown-menu {
+  display: block;
+}
+
+.dropdown>.dropdown-toggle:active {
+  /*Without this, clicking will make it sticky*/
+    pointer-events: none;
+}
+
+.container-cst{
+  margin-top: 40px;
+}
+label .menu {
+    position: absolute;
+    right: -100px;
+    top: -100px;
+    z-index: 100;
+    width: 200px;
+    height: 200px;
+    background: #21C4FC;
+    border-radius: 50% 50% 50% 50%;
+    -webkit-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    -webkit-box-shadow: 0 0 0 0 #FFF, 0 0 0 0 #FFF;
+            box-shadow: 0 0 0 0 #FFF, 0 0 0 0 #FFF;
+    cursor: pointer;
+  }
+  label .hamburger {
+    position: absolute;
+    top: 135px;
+    left: 50px;
+    width: 30px;
+    height: 5px;
+    border-radius: 25px;
+    background: #ffffff;
+    display: block;
+    -webkit-transform-origin: center;
+            transform-origin: center;
+    -webkit-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+  }
+  label .hamburger:after, label .hamburger:before {
+    -webkit-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    border-radius: 25px;
+  }
+  label .hamburger:before {
+    top: -10px;
+  }
+  label .hamburger:after {
+    bottom: -10px;
+  }
+  label input {
+    display: none;
+  }
+  label input:checked + .menu {
+    -webkit-box-shadow: 0 0 0 100vw #21C4FC, 0 0 0 100vh #21C4FC;
+            box-shadow: 0 0 0 100vw #21C4FC, 0 0 0 100vh #21C4FC;
+    border-radius: 0;
+  }
+  label input:checked + .menu .hamburger {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  label input:checked + .menu .hamburger:after {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    bottom: 0;
+  }
+  label input:checked + .menu .hamburger:before {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    top: 0;
+    
+  }
+  label input:checked + .menu + ul {
+    opacity: 1;
+  }
+  label ul {
+    z-index: 200;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    opacity: 0;
+    -webkit-transition: .25s 0s ease-in-out;
+    transition: .25s 0s ease-in-out;
+    list-style: none;
+
+
+  }
+  label a {
+    margin-bottom: 1em;
+    font-size: 40px;
+    text-align: center;
+    font-weight: 600;
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    transition-duration: .5s;
+    display: none;
+  }
+
+  label a:hover {
+
+    color: #000000;
+  }
+  
+  label input:checked + .menu + ul a {
+    display: block;
+    }
+.container-cst{
+  padding-left: 5% ;
+  padding-right: 5% ;
+  padding-bottom: 5% ;
+}
+
+
+/* Create three equal columns that floats next to each other */
+.column {
+  display: none; /* Hide all elements by default */
+}
+
+
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.butn {
+  border: none;
+  outline: none;
+  padding: 8px 20px;
+  background-color: rgb(244, 244, 244);
+  cursor: pointer;
+  border-radius: 25px;
+  border: 0px;
+  font-size: 11px;
+  margin-top: 8px;
+}
+
+.butn:hover {
+  background-color: #ddd;
+}
+
+.butn.active {
+  background-color: #00aaff;
+  color: white;
+  border: 0px;
+}
+
+
+@media screen and (min-width: 769px) {
+
+/* Create three equal columns that floats next to each other */
+.column {
+  display: none; /* Hide all elements by default */
+}
+
+
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.butn {
+  border: none;
+  outline: none;
+  padding: 8px 40px;
+  background-color: rgb(244, 244, 244);
+  cursor: pointer;
+  border-radius: 25px;
+  border: 0px;
+  font-size: 14px;
+
+}
+
+.butn:hover {
+  background-color: #ddd;
+}
+
+.butn.active {
+  background-color: #21C4FC;
+  color: white;
+  border: 0px;
+}
+
+
+
+}
+
+.onpageNav{
+  padding-bottom: 30px;
+}
