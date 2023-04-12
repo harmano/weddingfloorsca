@@ -120,7 +120,32 @@ input[type=time]::-webkit-datetime-edit {
     text-align: center;
     width     : 100%;
 }
+.parallax2{
+  /* The image used */
+  background-image: url("/assets/portfolio-img/houseofwraplobby copy.jpg");
 
+  /* Set a specific height */
+  min-height: 300px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.parallax3{
+  /* The image used */
+  background-image: url("/assets/portfolio-img/houseofwraplobby copy.jpg");
+
+  /* Set a specific height */
+  min-height: 300px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .hr-foot{
   color: white;
   width: 100%;
@@ -1186,8 +1211,9 @@ html, body {width: auto!important; overflow-x: hidden!important}
 }
 .img-about{
   width: 100%;
-  height: 10px;
+  height: 200px;
   object-fit: ;
+  position: static;
 
 }
 .num-cir{
