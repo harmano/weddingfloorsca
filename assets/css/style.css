@@ -56,10 +56,10 @@ p:last-child { margin: 0; font-family: 'Roboto', sans-serif !important; }
     margin-bottom:20px !important;
 }
 input[type=date], input[type=datetime-local], input[type=month], input[type=time] {
-  position: relative !important;
-  display: block !important;
-  width: 100% !important;
-  padding: 15px 20px !important;
+  position: relative ;
+  display: block ;
+  width: 100% ;
+  padding: 15px 20px ;
   margin: 0 0 4px 0;
   border-width: 1px !important;
   border-style: solid !important;
@@ -71,13 +71,11 @@ input[type=date], input[type=datetime-local], input[type=month], input[type=time
   -webkit-box-sizing: border-box !important;
   -moz-box-sizing: border-box !important;
   box-sizing: border-box !important;
-  border-color: #00000029 !important;
+  border-color: #0000002c !important;
 }
 
 
-input[type=date], input[type=datetime-local], input[type=month], input[type=time] {  
-  color: #000000 ;
-}
+
 
 input[type=date],
 input[type=time] {
@@ -104,7 +102,7 @@ input[type=time]::placeholder {
 
 input[type=date]::-webkit-calendar-picker-indicator,
 input[type=time]::-webkit-calendar-picker-indicator {
-    background: none;
+    background: none !important;
     bottom    : 0;
     color     : transparent;
     cursor    : pointer;
