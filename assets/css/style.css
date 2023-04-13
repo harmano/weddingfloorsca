@@ -1337,3 +1337,34 @@ span.circle {
   transform-origin: bottom left;
 }
 
+
+
+.first-overlay,
+.second-overlay,
+.third-overlay,
+.fourth-overlay {
+  z-index: 1;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  opacity: 0;
+}
+
+.section {
+  position: relative;
+  height: 30vh;
+}
+
+.bg {
+  background-image: url("/assets/portfolio-img/houseofwraplobby copy.jpg");
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  z-index: -1;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}

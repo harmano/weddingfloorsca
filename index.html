@@ -70,7 +70,7 @@
                             Design & Installation | GTA
                         </p> 
                         <!-- link starts --> 
-                        <a href="#" class="dtr-btn btn-white dtr-mt-30">(905) 407-9484 </a> 
+                        <a href="tel:9054079498" class="dtr-btn btn-white dtr-mt-30">(905) 407-9484 </a> 
                         <!-- link ends --> 
                     </div>
                 </div>
@@ -253,8 +253,8 @@
                         <!-- social starts -->
                         <ul class="dtr-social dtr-social-list dtr-styled-social text-left dtr-mt-30">
                             <li class="dtr-social-title font-weight-500 color-dark">Follow us on</li>
-                            <li><a href="#" class="dtr-social-button dtr-instagram" target="_blank" title="instagram"><span>Follow on Instagram</span></a></li>
-                            <li><a href="#" class="dtr-social-button dtr-google" target="_blank" title="linkedin"><span>View us on Google</span></a></li>
+                            <li><a href="https://www.instagram.com/houseofwrapcanada/" target="_blank" class="dtr-social-button dtr-instagram" target="_blank" title="instagram"><span>Follow on Instagram</span></a></li>
+                            <li><a href="https://goo.gl/maps/cqDWsqbUtdWvpEJR9" class="dtr-social-button dtr-google" target="_blank" title="linkedin"><span>View us on Google</span></a></li>
                         </ul>
                         <!-- social ends --> 
                         
@@ -280,6 +280,12 @@
   <!--<div class="parallax2 displaymob"></div>-->
 </div>
 </section>
+<div class="container-fluid">
+    <section class="section row">
+      <div class="col first-overlay"></div>
+      <div class="bg col"></div>
+    </section>
+  </div>
         <!-- about section starts
 ================================================== -->
         <section id="about" class="dtr-section dtr-py-100 bg-light-blue">
@@ -426,7 +432,7 @@
                                 <p>
                                     Add elegance to your wedding with custom initial floor decals in gold, white, or black. Let us design and install for you. Contact us now.
                                 </p>
-                                <a href="#" class="dtr-read-more">Contact</a> </div>
+                                <a href="#contact" class="dtr-read-more">Contact</a> </div>
                         </div>
                         <!-- blog item 1 ends --> 
                         
@@ -449,7 +455,7 @@
                                     Elevate your wedding dance floor with our white wraps. Custom designs, quality materials, and expert installation. Contact us today.
                                 </p>
 
-                                <a href="#" class="dtr-read-more">Contact</a> </div>
+                                <a href="#contact" class="dtr-read-more">Contact</a> </div>
                         </div>
                         <!-- blog item 2 ends --> 
                         
@@ -471,7 +477,7 @@
                                 <p>
                                     Bring your wedding vision to life with our custom floor wrap designs. Unique, durable, and expertly installed. Contact us for details.
                                 </p>
-                                <a href="#" class="dtr-read-more">Contact</a> </div>
+                                <a href="#contact" class="dtr-read-more">Contact</a> </div>
                         </div>
                         <!-- blog item 3 ends --> 
                         
@@ -907,7 +913,7 @@
                     <ul class="dtr-social dtr-social-list dtr-styled-social text-left dtr-mt-30">
                         <li><a href="mailto:contact@houseofwrap.com" class="dtr-social-button dtr-mail" target="_blank" title="mail"><span>Talk to us</span></a></li>
                         <li><a  rel="nofollow" target="_blank" href="https://www.google.com/maps?q=house+of+wrap&rlz=1C5CHFA_enCA938CA939&um=1&ie=UTF-8&sa=X&ved=2ahUKEwihzdGohPr8AhXEk4kEHcO7C9kQ_AUoAHoECAEQCg" class="dtr-social-button dtr-google" target="_blank" title="google"><span>Share on Google</span></a></li>
-                        <li><a href="#" class="dtr-social-button dtr-instagram" target="_blank" title="instagram"><span>Follow on Instagram</span></a></li>
+                        <li><a href="https://www.instagram.com/houseofwrapcanada/" target="_blank" class="dtr-social-button dtr-instagram" target="_blank" title="instagram"><span>Follow on Instagram</span></a></li>
                     </ul>
                     <!-- social ends --> 
                     
@@ -992,6 +998,76 @@
   document.getElementById("hid").style.visibility = "visible";
 }
 setTimeout("showIt()", 3000); // after 3 seconds
+
+gsap.to(".first-overlay", {
+  opacity: 1,
+  scrollTrigger: {
+    trigger: ".first-overlay",
+    start: "top top",
+    end: "bottom top",
+    scrub: true
+  }
+});
+
+gsap.from(".second-overlay", {
+  opacity: 1,
+  scrollTrigger: {
+    trigger: ".second-overlay",
+    start: "top top",
+    end: "bottom top",
+    scrub: true
+  }
+});
+
+gsap.from(".third-overlay", {
+  opacity: 1,
+  scrollTrigger: {
+    trigger: ".third-overlay",
+    start: "top top",
+    end: "bottom top",
+    scrub: true
+  }
+});
+
+gsap.to(".fourth-overlay", {
+  opacity: 1,
+  scrollTrigger: {
+    trigger: ".third-overlay",
+    start: "bottom bottom+=200",
+    end: "bottom",
+    scrub: true
+  }
+});
+
+gsap.utils.toArray("section").forEach((section, i) => {
+  section.bg = section.querySelector(".bg");
+  if (i) {
+    section.bg.style.backgroundPosition = `50% ${innerHeight / 2}px`;
+
+    gsap.to(section.bg, {
+      backgroundPosition: `50% ${-innerHeight / 2}px`,
+      ease: "none",
+      scrollTrigger: {
+        trigger: section,
+        scrub: true
+      }
+    });
+  } else {
+    section.bg.style.backgroundPosition = "50% 0px";
+
+    gsap.to(section.bg, {
+      backgroundPosition: `50% ${-innerHeight / 2}px`,
+      ease: "none",
+      scrollTrigger: {
+        trigger: section,
+        start: "top top",
+        end: "bottom top",
+        scrub: true
+      }
+    });
+  }
+});
+
 </script>
 </body>
 </html>
