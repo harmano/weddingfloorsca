@@ -569,7 +569,9 @@ label .menu {
   border: 0px;
 }
 
-
+.displaymm{
+  display: none;
+}
 @media screen and (min-width: 769px) {
 
 /* Create three equal columns that floats next to each other */
@@ -583,7 +585,12 @@ label .menu {
 .show {
   display: block;
 }
-
+.displaymm{
+  display: block;
+}
+.displaynn{
+  display: none;
+}
 /* Style the buttons */
 .butn {
   border: none;
