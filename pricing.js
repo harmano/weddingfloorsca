@@ -1,65 +1,80 @@
 /*........................Other......................*/
-var removal = "$100.00";
+var removal = "$150.00";
+/*........................White Floor Wrap......................*/
+var FSqft = "$2.50/sqft";
+var SSqft = "$1.85/sqft";
+var ESqft = "$1.45/sqft";
+var TSqft = "$1.35/sqft";
+
+
+/*........................Custom Floor Wrap......................*/
+var CFSqft = "$5.00/sqft";
+var CSSqft = "$3.75/sqft";
+var CESqft = "$2.90/sqft";
+var CTSqft = "$2.70/sqft";
+
+
+
 
 
 /*........................BASIC DECAL......................*/
 /* DECAL BASIC BLACK */
-var BSfourbyFourBlk = "400.00";
-var BSsixBysixBlk = "$500.00";
-var BSeightByeightBlk = "$600.00";
-var BStenBytenBlk = "$700.00";
-var BStwelveBytwelveBlk = "$800.00";
+var BSfourbyFourBlk = "$245";
+var BSsixBysixBlk = "$295";
+var BSeightByeightBlk = "$345";
+var BStenBytenBlk = "$395";
+var BStwelveBytwelveBlk = "$445";
 
-var BSfourByfourBlkCircle = "400.00";
-var BSsixBysixBlkCircle = "$500.00";
-var BSeightByeightBlkCircle = "$600.00";
-var BStenBytenBlkCircle = "$700.00";
-var BStwelveBytwelveBlkCircle = "$800.00";
+var BSfourByfourBlkCircle = "$120";
+var BSsixBysixBlkCircle = "$130";
+var BSeightByeightBlkCircle = "$140";
+var BStenBytenBlkCircle = "$150";
+var BStwelveBytwelveBlkCircle = "$170";
 
-var BSfourByfourBlkDate = "400.00";
-var BSsixBysixBlkDate = "$500.00";
-var BSeightByeightBlkDate = "$600.00";
-var BStenBytenBlkDate = "$700.00";
-var BStwelveBytwelveBlkDate = "$800.00";
+var BSfourByfourBlkDate = "$95";
+var BSsixBysixBlkDate = "$115";
+var BSeightByeightBlkDate = "$125";
+var BStenBytenBlkDate = "$145";
+var BStwelveBytwelveBlkDate = "$165";
 
 /* DECAL BASIC COLOR */
-var BSfourByfourC = "C4500.00";
-var BSsixBysixC = "C$5500.00";
-var BSeightByeightC = "C$6500.00";
-var BStenBytenC = "C$7500.00";
-var BStwelveBytwelveC = "C$8050.00";
+var BSfourByfourC = "$295";
+var BSsixBysixC = "$370";
+var BSeightByeightC = "$445";
+var BStenBytenC = "$520";
+var BStwelveBytwelveC = "$595";
 
-var BSfourByfourCDate = "C$4500.00";
-var BSsixBysixCDate = "C$5500.00";
-var BSeightByeightCDate = "C$6500.00";
-var BStenBytenCDate = "C$7500.00";
-var BStwelveBytwelveCDate = "C$8050.00";
+var BSfourByfourCDate = "$95";
+var BSsixBysixCDate = "$115";
+var BSeightByeightCDate = "$135";
+var BStenBytenCDate = "$155";
+var BStwelveBytwelveCDate = "$165";
 
-var BSfourByfourCCircle = "C$4500.00";
-var BSsixBysixCCircle = "C$5500.00";
-var BSeightByeightCCircle = "C$6500.00";
-var BStenBytenCCircle = "C$7500.00";
-var BStwelveBytwelveCCircle = "C$8050.00";
+var BSfourByfourCCircle = "$125";
+var BSsixBysixCCircle = "$135";
+var BSeightByeightCCircle = "$155";
+var BStenBytenCCircle = "C$185";
+var BStwelveBytwelveCCircle = "$195";
 
 /* DECAL BASIC GOLD */
-var BSfourByfourG = "G400.00";
-var BSsixBysixG = "G500.00";
-var BSeightByeightG = "G$600.00";
-var BStenBytenG = "G700.00";
-var BStwelveBytwelveG = "G800.00";
+var BSfourByfourG = "$350";
+var BSsixBysixG = "$425";
+var BSeightByeightG = "$500";
+var BStenBytenG = "$575";
+var BStwelveBytwelveG = "$650";
 
-var BSfourByfourGDate = "G400.00";
-var BSsixBysixGDate = "G500.00";
-var BSeightByeightGDate = "G$600.00";
-var BStenBytenGDate = "G700.00";
-var BStwelveBytwelveGDate = "G800.00";
+var BSfourByfourGDate = "$115";
+var BSsixBysixGDate = "$135";
+var BSeightByeightGDate = "$155";
+var BStenBytenGDate = "$165";
+var BStwelveBytwelveGDate = "$175";
 
 
-var BSfourByfourGCircle = "G400.00";
-var BSsixBysixGCircle = "G500.00";
-var BSeightByeightGCircle = "G$600.00";
-var BStenBytenGCircle = "G700.00";
-var BStwelveBytwelveGCircle = "G800.00";
+var BSfourByfourGCircle = "$135";
+var BSsixBysixGCircle = "$155";
+var BSeightByeightGCircle = "$185";
+var BStenBytenGCircle = "$195";
+var BStwelveBytwelveGCircle = "$215";
 
 
 /*........................STANDARD DECAL......................*/
@@ -204,6 +219,15 @@ const classes = [
     "BStwelveBytwelveC", 
     "BSfourByfourCDate", "BSsixBysixCDate", "BSeightByeightCDate", "BStenBytenCDate", "BStwelveBytwelveCDate", "BSfourByfourCCircle", "BSsixBysixCCircle", "BSeightByeightCCircle", "BStenBytenCCircle", "BStwelveBytwelveCCircle", "BSfourByfourG", "BSsixBysixG", "BSeightByeightG", "BStenBytenG", "BStwelveBytwelveG", "BSfourByfourGDate", "BSsixBysixGDate", "BSeightByeightGDate", "BStenBytenGDate", "BStwelveBytwelveGDate", "BSfourByfourGCircle", "BSsixBysixGCircle", "BSeightByeightGCircle", "BStenBytenGCircle", "BStwelveBytwelveGCircle", "DSfourByfourBlk", "DSsixBysixBlk", "DSeightByeightBlk", "DStenBytenBlk", "DStwelveBytwelveBlk", "DSfourByfourBlkCircle", "DSsixBysixBlkCircle", "DSeightByeightBlkCircle", "DStenBytenBlkCircle", "DStwelveBytwelveBlkCircle", "DSfourByfourBlkDate", "DSsixBysixBlkDate", "DSeightByeightBlkDate", "DStenBytenBlkDate", "DStwelveBytwelveBlkDate", "DSfourByfourC", "DSsixBysixC", "DSeightByeightC", "DStenBytenC", "DStwelveBytwelveC", "DSfourByfourCCircle", "DSsixBysixCCircle", "DSeightByeightCCircle", "DStenBytenCCircle", "DStwelveBytwelveCCircle", "DSfourByfourCDate", "DSsixBysixCDate", "DSeightByeightCDate", "DStenBytenCDate", "DStwelveBytwelveCDate", "DSfourByfourG", "DSsixBysixG", "DSeightByeightG", "DStenBytenG", "DStwelveBytwelveG", "DSfourByfourGDate", "DSsixBysixGDate", 
     "DSeightByeightGDate", 
+    "FSqft",
+    "SSqft",
+    "ESqft",
+    "TSqft",
+    'CFSqft',
+    "CSSqft",
+    "CESqft",
+    "CTSqft",
+
   ];
   
   classes.forEach((className) => {
