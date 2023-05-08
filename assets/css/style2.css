@@ -550,12 +550,12 @@ label .menu {
 .butn {
   border: none;
   outline: none;
-  padding: 8px 20px;
+  padding: 8px 14px;
   background-color: rgb(244, 244, 244);
   cursor: pointer;
   border-radius: 25px;
   border: 0px;
-  font-size: 11px;
+  font-size: 10px;
   margin-top: 8px;
 }
 
@@ -613,4 +613,11 @@ label .menu {
 
 .onpageNav{
   padding-bottom: 30px;
+}
+
+.onpageNav button{
+  color: black !important;
+}
+.onpageNav  .butn.active{
+  color: rgb(255, 255, 255) !important;
 }
